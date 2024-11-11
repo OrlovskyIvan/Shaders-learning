@@ -16,11 +16,13 @@ export default class SceneCamera {
 			1000,
 		)
 			
-		this.#camera.position.set(2, 3.5, 2.5)
+		// this.#camera.position.set(2, 3.5, 2.5)
+		this.#camera.position.set(0, 4.8, 1.5)
 			
 		this._cameraControls = new CameraControls(this.#camera, rendererDomElement)
 			
-		this._cameraControls.setTarget(2, 0, 0)
+		// this._cameraControls.setTarget(2, 0, 0)
+		this._cameraControls.setTarget(0, 0, 0)
 			
 		this._cameraControls.azimuthRotateSpeed = 0.1 // Дефолтное значение: 1.0
 		this._cameraControls.polarRotateSpeed = 0.1 // Дефолтное значение: 1.0
